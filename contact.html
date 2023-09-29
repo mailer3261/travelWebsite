@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website | Welcome !</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <div class="container">
+        <h1 class="logo lg-heading text-light">WT</h1>
+        <ul class="nav-items">
+          <li class="nav-item"><a href="./index.html">Home</a></li>
+          <li class="nav-item"><a href="./about.html">About</a></li>
+          <li class="nav-item"><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="main">
+      <div class="container">
+        <div class="contact-info">
+          <div class="info">
+            <h2><i class="fa-solid fa-location-dot"></i>location</h2>
+            <h3>#2661 Janakpuri Colony, City name, Town name</h3>
+          </div>
+          <div class="info">
+            <h2><i class="fa-regular fa-envelope"></i>e-mail</h2>
+            <h3>info@gmail.com</h3>
+          </div>
+          <div class="info">
+            <h2><i class="fa-solid fa-square-phone"></i>call</h2>
+            <h3>+919000000000</h3>
+          </div>
+          <img src="./img/company-img.jpg"  alt="Company Building" />
+        </div>
+        <div class="contact-form md-heading">
+          <h1>Contact Us</h1>
+          <p>
+            Let us know Your questions, suggestions and Concerns by filling out
+            the form below.
+          </p>
+          <form action="submit_form.php" method="post">
+            <label for="name"
+              >Username:
+              <p>*</p></label
+            ><br />
+            <input type="text" id="name" name="name" required />
+            <br />
+
+            <label for="email"
+              >Email:
+              <p>*</p></label
+            ><br />
+            <input type="email" id="email" name="email" required />
+            <br />
+            <label for="phone"
+              >Phone:
+              <p>*</p></label
+            ><br />
+            <input type="number" id="phone" name="phone" required />
+            <br />
+
+            <div class="input">
+              <label for="message"
+                >Message:
+                <p>*</p></label
+              ><br />
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                cols="30"
+                required
+              ></textarea>
+            </div>
+            <br />
+
+            <input type="submit" value="Submit" class="submit-btn" />
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
